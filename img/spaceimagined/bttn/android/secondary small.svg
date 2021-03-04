@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="165" height="48" viewBox="0 0 165 48">
+  <defs>
+    <rect id="secondary-small-b" width="157" height="40" x="0" y="0" rx="4"/>
+    <filter id="secondary-small-a" width="108.9%" height="135%" x="-4.5%" y="-12.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+    <use fill="#000" filter="url(#secondary-small-a)" xlink:href="#secondary-small-b"/>
+    <use fill="#ECE3CB" xlink:href="#secondary-small-b"/>
+    <text fill="#2A438B" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" letter-spacing=".514">
+      <tspan x="33.69" y="27">Secondary</tspan>
+    </text>
+  </g>
+</svg>

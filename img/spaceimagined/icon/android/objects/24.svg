@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-  <g fill="none" fill-rule="evenodd">
-    <rect width="12" height="12" x=".5" y="7.5" stroke="#757575"/>
-    <polygon fill="#757575" points="13 6.667 20 0 20 12.917 13 20"/>
-    <path stroke="#757575" d="M18.8333333,0.5 L13.1190476,6.5 L1.16666667,6.5 L6.88095238,0.5 L18.8333333,0.5 Z"/>
-  </g>
-</svg>

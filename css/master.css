@@ -1,0 +1,89 @@
+/*
+Portfolio Framing Colors
+Warm Gray: #D9D3CF
+Copper: #B87333
+Dark Copper: #915F1C
+*/
+@font-face {
+  font-family: "Sathu";
+  src: url("/fonts/Sathu.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "New York";
+  src: url("/fonts/NewYork.ttf") format('truetype');
+}
+
+body {
+  font-family: 'Sathu', sans-serif;
+  line-height: 1.5em;
+  font-size: 18;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'New York', serif;
+  line-height: 2em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 450;
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #915F1C;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.button, .button:visited{
+  display: inline-block;
+  background-color: transparent;
+  color: #B87333;
+  font-weight: 400;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: 2px solid #B87333;
+  transition: 0.2s opacity;
+}
+
+.button:hover, .button:focus, .button:active{
+  display: inline-block;
+  background-color: #B87333;
+  color: #FFFFFF;
+  border: 2px solid #915F1C;
+  text-decoration: none;
+}
+
+.banner {
+  background-color: #D9D3CF
+}

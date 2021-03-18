@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Carolyn Voss UI Design Portfolio About</title>
+  <!--css-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/master.css">
+  <!--favicon-->
   <link href="favicon/favicon.ico" rel="shortcut icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -12,10 +16,12 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <!--responsive scaling-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
-  <header>
+<body id="about">
+  <header class="banner" id="header">
     <div class="">
       <a href="index.html">Carolyn Voss Design</a>
       <nav>
@@ -60,7 +66,7 @@
               I am most at home with applications featuring communication and entertainment, but I would never let that stand in the way of a good challenge.
               <br>I am currently available for hire in the Chicago area, or for remote work. Please feel free to contact me here for professional questions, comments, or opportunities.
             </p>
-            <a href="files/VossResume.pdf" target="_blank">resume</a>
+            <a href="files/VossResume.pdf" class="button" target="_blank">resume</a>
           </div>
 
         </div>
@@ -107,15 +113,15 @@
               <!--top set of 3-->
               <div class="">
                 <div class="">
-                  <img src="ic/sketch.png" alt="Sketch Icon">
+                  <img src="ic/sketch.png" class="toolic" alt="Sketch Icon">
                   <p>Sketch</p>
                 </div>
                 <div class="">
-                  <img src="ic/iv.png" alt="Invision Icon">
+                  <img src="ic/iv.png" class="toolic" alt="Invision Icon">
                   <p>Invision</p>
                 </div>
                 <div class="">
-                  <img src="ic/ps.png" alt="Photoshop Icon">
+                  <img src="ic/ps.png" class="toolic" alt="Photoshop Icon">
                   <p>Photoshop</p>
                 </div>
               </div>
@@ -123,11 +129,11 @@
               <!--bottom set of 2-->
               <div class="">
                 <div class="">
-                  <img src="ic/vw.png" alt="Vectorworks Icon">
+                  <img src="ic/vw.png" class="toolic" alt="Vectorworks Icon">
                   <p>Vectorworks</p>
                 </div>
                 <div class="">
-                  <img src="ic/cs.png" alt="Clip Studio Icon">
+                  <img src="ic/cs.png" class="toolic" alt="Clip Studio Icon">
                   <p>Clip Studio</p>
                 </div>
               </div>
@@ -143,7 +149,7 @@
     </div>
   </main>
 
-  <footer id="contact">
+  <footer id="contact" class="banner">
 
     <div class="">
       <h2>Get in Touch</h2>
@@ -151,7 +157,7 @@
     </div>
 
     <div class="">
-      <a href="mailto:cvoss@carolynvossdesign.com">email me</a>
+      <a href="mailto:cvoss@carolynvossdesign.com" class="button">email me</a>
     </div>
 
     <!--social media links-->

@@ -26,18 +26,19 @@ Dark Copper: #915F1C
 body {
   font-family: 'Sathu', sans-serif;
   line-height: 1.5em;
-  font-size: 18;
+  font-size: 15;
   font-weight: 300;
 }
 
 h1, h2, h3, h4 {
   font-family: 'New York', serif;
   line-height: 1em;
+  width: 100%;
 }
 
 h1 {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h2 {
@@ -55,6 +56,11 @@ h4 {
   font-weight: 400;
 }
 
+.labels {
+  font-size: .75em;
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
@@ -66,8 +72,20 @@ a {
 
 header {
   background-color: #D9D3CF;
-  padding: 20px;
+  padding: 12px 0 0;
   margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0px 2px 2px 0px #D7CDC6;
+}
+
+span {
+  font-family: 'New York', serif;
+  line-height: 1.25em;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 a:visited {
@@ -85,7 +103,7 @@ a:hover, a:focus, a:active {
   background-color: transparent;
   color: #B87333;
   font-weight: 400;
-  padding: 10px 24px;
+  padding: 10px 26px;
   border-radius: 4px;
   border: 2px solid #B87333;
   transition: 0.2s opacity;
@@ -105,10 +123,58 @@ a:hover, a:focus, a:active {
 
 /* layout */
 
+main {
+  padding-top: 102px;
+}
+
 .container {
   padding: 0 12px;
 }
 
 .row {
-  margin: 48px 0;
+  margin: 32px 0;
+}
+
+.toolic {
+  width: 90px;
+  display: inline-block;
+}
+
+.thumb {
+  display: inline-block;
+  max-width: 760px;
+}
+
+.social {
+  display: inline-block;
+  padding: 20px 12px
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 10px 24px 0;
+}
+
+#home > h1, h2 {
+  text-align: center;
+}
+
+#projects {
+  padding-top: 20px;
+}
+
+#welcome, #contact {
+  padding: 12px 0;
+  text-align: center;
+  display: inline-block;
+  width: 100%
 }

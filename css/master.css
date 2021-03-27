@@ -17,21 +17,24 @@ Dark Copper: #915F1C
   src: url("../fonts/NewYork.ttf") format('truetype');
 }
 
-/* styling */
+/* general styling */
 
 * {
   box-sizing: border-box;
 }
 
+/* typography */
+
 body {
   font-family: 'Sathu', sans-serif;
   line-height: 1.5em;
-  font-size: 15;
+  font-size: 16;
   font-weight: 300;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'New York', serif;
+  display: inline-block;
   line-height: 1em;
   width: 100%;
 }
@@ -39,6 +42,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -56,13 +60,75 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+span {
+  font-family: 'New York', serif;
+  line-height: 1.25em;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+blockquote {
+  font-family: 'New York', serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  border: 1px solid #CB9500;
+  margin: 40px auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
 .labels {
   font-size: .75em;
   text-align: center;
 }
 
+.sih2 {
+  border-bottom: 4px solid #C8C8C8;
+}
+
+.left {
+  text-align: left;
+}
+
+.centered {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.money {
+  color: #16585A;
+ font-style: italic;
+}
+
+/* imagery, links, buttons */
+
 img {
   width: 100%;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+}
+
+.simock {
+  max-height: 547px;
+  display: inline-block;
+  padding: 12px;
 }
 
 a {
@@ -79,13 +145,6 @@ header {
   display: inline-block;
   width: 100%;
   box-shadow: 0px 2px 2px 0px #D7CDC6;
-}
-
-span {
-  font-family: 'New York', serif;
-  line-height: 1.25em;
-  font-size: 1.5em;
-  font-weight: 300;
 }
 
 a:visited {
@@ -117,8 +176,27 @@ a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
+.inlinelink {
+  color: #B87333;
+  text-decoration: none;
+}
+
 .banner {
   background-color: #D9D3CF;
+}
+
+/* table styles */
+
+tr:nth-child(even) {background-color: #F6F7E9;}
+
+th {
+  padding: 24px;
+  text-align-last: left;
+}
+
+td {
+  padding: 15px 12px;
+  text-align: left;
 }
 
 /* layout */
@@ -131,13 +209,83 @@ main {
   padding: 0 12px;
 }
 
+.section {
+  margin: 100px 0;
+}
+
 .row {
-  margin: 32px 0;
+  margin: 60px 0;
+}
+
+.subsection {
+  margin: 48px 0;
+}
+
+.subrow {
+  margin: 24px 0;
+}
+
+.subrowicons {
+  width: 200px;
+}
+
+.user1, .user2 {
+  display: inline-block;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+}
+
+.user1{
+  background-color: #C7D6D3;
+  float: left;
+}
+
+.user2 {
+  background-color: #FFF3B6;
+  float: right;
+}
+
+.uxtest1, .uxtest2 {
+  width: 296px;
+}
+
+.uxtest1{
+  float:left;
+}
+
+.uxtest2{
+  float:right;
+}
+
+.uxresults {
+  background-color: #DBDBDB;
+  margin: 40px auto;
+  padding: 24px 32px 24px 24px;
+  height: 360px;
 }
 
 .toolic {
   width: 90px;
   display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  float: left;
+  padding: 12px 0;
+}
+
+.iconsm {
+  display: inline-block;
+  width: 33.33px;
+  display: flex;
+  justify-content: center;
+  float: left;
+  padding: 12px 0;
 }
 
 .thumb {
@@ -154,7 +302,44 @@ main {
   border-radius: 50%;
 }
 
+.colorblock1, .colorblock2, .colorblock3, .colorblock4, .colorblock5 {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.colorblock1 {
+  max-width: 70%;
+}
+
+.colorblock2 {
+  max-width: 55%;
+}
+
+.colorblock3 {
+  max-width: 40%;
+}
+
+.colorblock4 {
+  max-width: 25%;
+}
+
+.colorblock5 {
+  max-width: 12%;
+}
+
+
 nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about > ul > li {
+  display: inline-block;
+  padding: 10px 24px 0;
+}
+
+#about > ul {
   list-style-type: none;
   padding: 0;
 }
@@ -164,7 +349,7 @@ nav > ul > li {
   padding: 10px 24px 0;
 }
 
-#home > h1, h2 {
+#home > h1, #home > h2 {
   text-align: center;
 }
 
@@ -177,4 +362,51 @@ nav > ul > li {
   text-align: center;
   display: inline-block;
   width: 100%
+}
+
+#aboutchanges {
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 1px solid #896500;
+  padding: 12px;
+  float: left;
+}
+
+#changesuxmock {
+  float:right;
+  max-width: 1020px;
+}
+
+#changesprototype {
+  max-width: 400px;
+}
+
+#changesuxtest {
+  max-width: 640px;
+}
+
+/* floatrules */
+
+.column{
+  float: left;
+}
+
+.columnright{
+  float: right;
+}
+
+.column, .columnright::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

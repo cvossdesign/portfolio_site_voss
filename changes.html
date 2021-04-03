@@ -21,9 +21,9 @@
 </head>
 
 <body id="changes">
-  <header class="" id="header">
-    <div class="banner">
-      <a href="index.html">Carolyn Voss Design</a>
+  <header class="banner" id="header">
+    <div class="container">
+      <a class="logo" href="index.html">Carolyn Voss Design</a>
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -35,46 +35,32 @@
   </header>
 
   <main>
-    <!--hero-->
     <div class="container">
-      <!--row-->
+      <!--hero-->
       <div class="row">
-        <!--column 1-->
-        <div class="">
-          <h1 class="left">Changes</h1>
-        </div>
-        <!--column 2-->
-        <div class="">
-          <p class="money">Money can change your life. <br>You can change your habits. <br>We can help with both.</p>
-        </div>
-      </div>
-    </div>
-    <!--background hero image-->
-    <div class="">
-      <source srcset="img/changes/hero_mockup@0.5x.png" media="(max-width:767px)">
-      <img src="img/changes/hero_mockup.png" alt="laptop with dashboard app display">
-    </div>
-
-    <!--row-->
-    <div class="container">
-      <div class="subsection">
-        <!--column 1-->
-        <div id="aboutchanges">
-          <h4>Case Study by Carolyn Voss</h4>
-          <p>Role: UI/UX Design, Prototyping, and User Testing</p>
-          <p>Project scale: 1 month</p>
-          <p>Produced for Career Foundry UI Course</p>
-        </div>
-        <!--column 2-->
-        <div class="columnright">
-          <h3>About Changes</h3>
-          <p>Changes is a web-responsive financial planning app.</p>
-          <ul>
-            <li>Set flexible savings goal.</li>
-            <li>Track income and expenses.</li>
-            <li>Get rewards.</li>
-          </ul>
-          <p>We make it easy to stay on top of your money</p>
+        <h1>Changes</h1>
+        <p class="money">Money can change your life. <br>You can change your habits. <br>We can help with both.</p>
+        <picture>
+          <source srcset="img/changes/hero_mockup@0.5x.png" media="(max-width:767px)">
+          <img src="img/changes/hero_mockup.png" alt="changes app landing page on laptop display">
+        </picture>
+        <div class="subsection">
+          <div class="col-md-6" id="aboutchanges">
+            <h4>Case Study by Carolyn Voss</h4>
+            <p>Role: UI/UX Design, Prototyping, and User Testing</p>
+            <p>Project scale: 1 month</p>
+            <p>Produced for Career Foundry UI Course</p>
+          </div>
+          <div class="col-md-6">
+            <h4>About Changes</h4>
+            <p>Changes is a web-responsive financial planning app.</p>
+            <ul>
+              <li>Set flexible savings goal.</li>
+              <li>Track income and expenses.</li>
+              <li>Get rewards.</li>
+            </ul>
+            <p>We make it easy to stay on top of your money</p>
+          </div>
         </div>
       </div>
 
@@ -97,143 +83,111 @@
         <!--row color palette-->
         <div class="row">
           <!--column 1-->
-          <div class="">
+          <div class="col-md-1 col-lg-2">
             <h3>Color Palette</h3>
             <p>Greens and Golds
               <br>Wealth and Growth
             </p>
           </div>
           <!--column 2-->
-          <div class="">
-            <!--subrow 1-->
-            <div class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="100" cy="100" r="100" fill="#C7D6D3" />
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="83.546" y="78.667">Mint</tspan>
-                  </text>
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="69.246" y="117">#C7D6D3</tspan>
-                  </text>
-                </g>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="100" cy="100" r="100" fill="#16585A" />
-                  <text fill="#FFF" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="84.569" y="78.667">Teal</tspan>
-                  </text>
-                  <text fill="#FFF" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="70.843" y="117">#16585A</tspan>
-                  </text>
-                </g>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="100" cy="100" r="100" fill="#CB9500" />
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="83.353" y="78.667">Gold</tspan>
-                  </text>
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="70.6" y="117">#CB9500</tspan>
-                  </text>
-                </g>
-              </svg>
+          <div class="col-md-1 col-lg-4">
+            <div class="subrow">
+              <div class="col-3">
+                <div class="color-circle" style="background-color:#C7D6D3">
+                  <p class="colortext">Mint
+                    <br>#C7D6D3
+                  </p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="color-circle" style="background-color:#16585A">
+                  <p class="colortext" style="color:white">Teal
+                    <br>#16585A
+                  </p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="color-circle" style="background-color:#CB9500">
+                  <p class="colortext">Gold
+                    <br>#CB9500
+                  </p>
+                </div>
+              </div>
             </div>
-            <!--subrow 2-->
-            <div class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="60" cy="60" r="59.5" fill="#FFF" stroke="#003" />
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="44.417" y="53">White</tspan>
-                  </text>
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="36.193" y="76">#FFFFFF</tspan>
-                  </text>
-                </g>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="60" cy="60" r="60" fill="#FFF3B6" />
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="40.555" y="49">Wheat</tspan>
-                  </text>
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="33.063" y="72">#FFF3B6</tspan>
-                  </text>
-                </g>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="60" cy="60" r="60" fill="#F7D600" />
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="42.29" y="49">Yellow</tspan>
-                  </text>
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="35.302" y="72">#F7D600</tspan>
-                  </text>
-                </g>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="60" cy="60" r="60" fill="#009978" />
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="38.124" y="49">Emerald</tspan>
-                  </text>
-                  <text fill="#003" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="36.008" y="72">#009978</tspan>
-                  </text>
-                </g>
-              </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
-                <g fill="none" fill-rule="evenodd">
-                  <circle cx="60" cy="60" r="60" fill="#003" />
-                  <text fill="#FFF" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="36.123" y="53">Midnight</tspan>
-                  </text>
-                  <text fill="#FFF" font-family="Charter-Roman, Charter" font-size="12">
-                    <tspan x="36.008" y="76">#000033</tspan>
-                  </text>
-                </g>
-              </svg>
+            <div class="subrow">
+              <div class="col-sm-3 col-md-5">
+                <div class="color-circle" style="border: 1px solid black">
+                  <p class="colortext">White
+                    <br>#FFFFFF
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-5">
+                <div class="color-circle" style="background-color:#FFF3B6">
+                  <p class="colortext">Wheat
+                    <br>#FFF3B6
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-5">
+                <div class="color-circle" style="background-color:#F7D600">
+                  <p class="colortext">Yellow
+                    <br>#F7D600
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-5">
+                <div class="color-circle" style="background-color:#009978">
+                  <p class="colortext">Emerald
+                    <br>#009978
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-3 col-md-5">
+                <div class="color-circle" style="color: white; background-color:#000033">
+                  <p class="colortext">Midnight
+                    <br>#000033
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-
-        </div>
-
-        <!--row typography-->
-        <div class="row">
-          <!--column 1-->
-          <div class="">
-            <h3>Typography</h3>
-            <p>Clean and open <br>Helvetice titles</p>
-            <p>Formal and reliable <br>Charter body copy</p>
-          </div>
-          <!--column 2-->
-          <div class="">
-            <p>Helvetica</p>
-            <p>Light oblique</p>
-            <p>Bold</p>
-          </div>
-          <!--column 3-->
-          <div class="">
-            <p>Charter</p>
-            <p>Roman</p>
-            <p>Bold</p>
           </div>
         </div>
 
-        <!--row iconography-->
-        <div class="row">
-          <!--column 1-->
-          <div class="">
-            <h3>Iconography</h3>
-            <p>Icons in midnight match body copy <br>Quick to inform, but not to distract</p>
-          </div>
-          <!--icon badge-->
-          <div class="">
+      </div>
+
+      <!--row typography-->
+      <div class="row">
+        <h3>Typography</h3>
+        <!--column 1-->
+        <div class="col-md-2">
+          <p>Clean and open <br>Helvetice titles</p>
+          <p>Formal and reliable <br>Charter body copy</p>
+        </div>
+        <!--column 2-->
+        <div class="col-md-2">
+          <p>Helvetica</p>
+          <p>Light oblique</p>
+          <p>Bold</p>
+        </div>
+        <!--column 3-->
+        <div class="col-md-2">
+          <p>Charter</p>
+          <p>Roman</p>
+          <p>Bold</p>
+        </div>
+      </div>
+
+      <!--row iconography-->
+      <div class="row">
+        <!--column 1-->
+        <div class="">
+          <h3>Iconography</h3>
+          <p>Icons in midnight match body copy <br>Quick to inform, but not to distract</p>
+        </div>
+        <!--icon badge-->
+        <div id="iconography">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="46" viewBox="0 0 26 46">
               <g fill="#003" fill-rule="evenodd">
                 <path d="M5,22 L21,22 L21,46 L13,39 L5,46 L5,22 Z" />
@@ -243,7 +197,7 @@
             </svg>
           </div>
           <!--icon bar graph-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40">
               <g fill="#003" fill-rule="evenodd" transform="translate(0 -5)">
                 <rect width="48" height="2" y="43" />
@@ -260,7 +214,7 @@
             </svg>
           </div>
           <!--icon wallet-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
               <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
                 <path fill="#003"
@@ -272,7 +226,7 @@
             </svg>
           </div>
           <!--icon lock-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="42" viewBox="0 0 28 42">
               <g fill="none" fill-rule="evenodd" transform="translate(-10 -2)">
                 <path fill="#003"
@@ -286,14 +240,14 @@
             </svg>
           </div>
           <!--icon savings-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="43" viewBox="0 0 36 43">
               <path fill="#003" fill-rule="evenodd"
                 d="M24.8012996,13 C30.2980612,19.8519421 33.7670296,25.1745228 35.208205,28.9677419 C36.252482,31.7163119 36.2638075,34.9291281 35.2421816,38.6061904 C34.5206988,41.2029454 32.1562836,43 29.4611632,43 L7.1952114,43 C3.88327173,42.9999934 1.02457691,40.6789019 0.344419884,37.4375548 C-0.279188168,34.4656968 -0.0559657511,31.6424258 1.01408713,28.9677419 C2.73212896,24.6733572 6.33567626,19.3507766 11.824729,13 L24.8012996,13 Z M18.9473684,16 L16.4210526,16 L16.4208808,19.1055827 C15.2714621,19.2866928 14.3536664,19.7008019 13.6674938,20.34791 C12.7146402,21.2465166 12.2382134,22.3749196 12.2382134,23.733119 C12.2382134,25.2216506 12.7311828,26.3157556 13.7171216,27.0154341 C14.2162354,27.3740928 15.0605155,27.7100728 16.249962,28.0233742 L16.5545146,28.1012271 L16.8734491,28.178135 L18.4218362,28.5382637 L18.7150691,28.6080029 C19.4731693,28.7970227 20.0404375,29.0104323 20.4168734,29.2482315 C20.8403639,29.5226152 21.0521092,29.9101822 21.0521092,30.4109325 C21.0521092,31.2683816 20.6253102,31.8548767 19.7717122,32.170418 C19.3217535,32.3350482 18.7361456,32.4173633 18.0148883,32.4173633 C16.8105873,32.4173633 15.9602978,32.1052519 15.4640199,31.4810289 C15.2530098,31.214267 15.096039,30.8416895 14.9931073,30.3632964 L14.9523022,30.1517923 L14.9181141,29.9273312 L12,29.9273312 L12.0056668,30.202243 C12.0661131,31.6497358 12.6101299,32.7979699 13.6377171,33.6469453 C14.3042143,34.1975942 15.1223607,34.5801711 16.0921563,34.7946759 L16.4210381,34.8599526 L16.4210526,38 L18.9473684,38 L18.9488244,34.9688082 C20.4256652,34.8516073 21.5982242,34.4041268 22.4665012,33.6263666 C23.4888337,32.7106109 24,31.5599143 24,30.1742765 C24,28.8229368 23.5632754,27.7905681 22.6898263,27.0771704 C22.2398677,26.7094962 21.6162779,26.401089 20.8190571,26.1519486 L20.5119603,26.061299 L20.1885856,25.9762058 L17.6674938,25.3485531 L17.4313482,25.2891747 C16.59126,25.0738121 16.0347395,24.8843873 15.7617866,24.7209003 C15.2985939,24.4533762 15.0669975,24.0486602 15.0669975,23.5067524 C15.0669975,22.9168274 15.3019024,22.4572347 15.7717122,22.1279743 C16.2415219,21.7987138 16.8701406,21.6340836 17.6575682,21.6340836 C18.3655914,21.6340836 18.9578164,21.7609861 19.4342432,22.014791 C20.0389387,22.3398302 20.4067521,22.8539546 20.5376834,23.5571643 L20.5675188,23.7536369 L20.5856079,23.9594855 L23.5235732,23.9594855 L23.5088566,23.678984 C23.4017018,22.2041478 22.8358877,21.0680663 21.8114144,20.2707395 C21.0694183,19.693259 20.2221124,19.3126031 19.2694969,19.1287718 L18.948058,19.0747845 L18.9473684,16 Z M15.5,4 C17.061205,3.55394144 18.5477968,2.80943053 19.9597756,1.76646726 L20.3430029,1.47461301 C21.3588137,0.677584076 22.7706471,0.619910146 23.8480827,1.33142916 C24.6928029,1.88926715 25.4101087,2.27879076 26,2.5 C27.4714582,3.05179682 30.4724242,2.29136376 30,3 L29.484375,3.7734375 C28.2447917,5.6328125 26.75,7.875 25,10.5 L12.5,10.5 C8.16666667,5.16666667 5.66666667,2 5,1 C5.5214678,-0.129846903 11.5,3.5 15.5,4 Z" />
             </svg>
           </div>
           <!--icon pie chart-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="47" height="48" viewBox="0 0 47 48">
               <g fill="none" fill-rule="evenodd">
                 <path fill="#003" d="M22,4 L22,26 L40.1943224,38.3717834 C36.2346564,44.1837114 29.5629992,48 22,48 C9.8497355,48 -1.49213975e-13,38.1502645 -1.49213975e-13,26 C-1.49213975e-13,13.8497355 9.8497355,4 22,4 L22,4 Z" />
@@ -303,7 +257,7 @@
             </svg>
           </div>
           <!--icon income-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="44" viewBox="0 0 48 44">
               <g fill="none" fill-rule="evenodd" transform="translate(0 -3)">
                 <path fill="#003"
@@ -314,14 +268,14 @@
             </svg>
           </div>
           <!--icon mail-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32">
               <path fill="#003" fill-rule="evenodd"
                 d="M26.25,17.0625 L39.375,31.5 L2.625,31.5 L15.75,17.0625 L20.7,20.775 C20.8777778,20.9083333 21.1222222,20.9083333 21.3,20.775 L21.3,20.775 L26.25,17.0625 Z M0,2.625 L14.065998,15.4122709 C14.2703268,15.5980244 14.2853851,15.9142485 14.0996316,16.1185773 C14.0991684,16.1190869 14.098704,16.1195956 14.0982387,16.1201033 L0,31.5 L0,2.625 Z M42,2.625 L42,31.5 L27.9017613,16.1201033 C27.901296,16.1195956 27.9008316,16.1190869 27.9003684,16.1185773 C27.7146149,15.9142485 27.7296732,15.5980244 27.934002,15.4122709 L27.934002,15.4122709 L42,2.625 Z M42,0 L21.3292523,18.0869042 C21.1407393,18.2518531 20.8592607,18.2518531 20.6707477,18.0869042 L0,0 L42,0 Z" />
             </svg>
           </div>
           <!--icon credit card-->
-          <div class="">
+          <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="29" viewBox="0 0 44 29">
               <path fill="#003" fill-rule="evenodd"
                 d="M46,19 L46,36 C46,38.209139 44.209139,40 42,40 L6,40 C3.790861,40 2,38.209139 2,36 L2,19 L46,19 Z M15,29 L7,29 C6.44771525,29 6,29.4477153 6,30 L6,30 L6,31 C6,31.5522847 6.44771525,32 7,32 L7,32 L15,32 C15.5522847,32 16,31.5522847 16,31 L16,31 L16,30 C16,29.4477153 15.5522847,29 15,29 L15,29 Z M20,23 L7,23 C6.44771525,23 6,23.4477153 6,24 L6,24 L6,25 C6,25.5522847 6.44771525,26 7,26 L7,26 L20,26 C20.5522847,26 21,25.5522847 21,25 L21,25 L21,24 C21,23.4477153 20.5522847,23 20,23 L20,23 Z M39,23 L35,23 C34.4477153,23 34,23.4477153 34,24 L34,24 L34,25 C34,25.5522847 34.4477153,26 35,26 L35,26 L39,26 C39.5522847,26 40,25.5522847 40,25 L40,25 L40,24 C40,23.4477153 39.5522847,23 39,23 L39,23 Z M42,11 C44.209139,11 46,12.790861 46,15 L46,16 L2,16 L2,15 C2,12.790861 3.790861,11 6,11 L42,11 Z"
@@ -333,26 +287,27 @@
 
       <!--user experience section-->
       <div class="section">
-          <!--column 1-->
-            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="17" viewBox="0 0 200 17">
-              <rect width="200" height="17" fill="#16585A" fill-rule="evenodd" />
-            </svg>
-            <h2>User Experience</h2>
-            <p>The project brief contained user stories.
-              <br>Those stories then helped guide initial design solutions
-            </p>
-          <!--column 2-->
-          <div id="changesuxmock">
-            <picture>
-              <source srcset="img/changes/ux_mockup@0.5x.png" media="(max-width:767px)">
-              <img src="img/changes/ux_mockup.png" alt="smiling man holding phone">
-            </picture>
-          </div>
+        <!--column 1-->
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="17" viewBox="0 0 200 17">
+          <rect width="200" height="17" fill="#16585A" fill-rule="evenodd" />
+        </svg>
+        <h2>User Experience</h2>
+        <p>The project brief contained user stories.
+          <br>Those stories then helped guide initial design solutions
+        </p>
+        <!--column 2-->
+        <div id="changesuxmock">
+          <picture>
+            <source srcset="img/changes/ux_mockup@0.5x.png" media="(max-width:767px)">
+            <img src="img/changes/ux_mockup.png" alt="smiling man holding phone">
+          </picture>
+        </div>
 
-          <div style="clear:both;"></div>
+        <div style="clear:both;"></div>
 
-          <!--column 1-->
-          <div class="user1">
+
+        <div class="flexrow">
+          <div class="flexcol" style="background-color: #C7D6D3">
             <h4>Problems</h4>
             <p>“I want to see a dashboard of my finances clearly and visually, so that I can see how much I am spending on what at a glance.”</p>
             <p>“I need to be able to tell the tool what my savings goal is and how long I have to reach it, so that I can save accordingly.”</p>
@@ -360,14 +315,14 @@
             <p>“I want to see an overview of how much my finances have changed and how much I am saving throughout the saving period, so that I can stay on track.”</p>
             <p>“I want to be notified and rewarded when I have reached certain milestones throughout the saving period.”</p>
           </div>
-          <!--column 2-->
-          <div class="user2">
+          <div class="flexcol" style="background-color: #FFF3B6">
             <h4>Solutions</h4>
             <p>A dashboard landing page that displays at-a-glance visuals for savings, income, and expenses</p>
             <p>An onboarding flow that allows users to input their basic figures and time line, which then automatically generates a savings plan. Allows for additions and modifications</p>
             <p>Nested levels of information allowing users to see big picture items first before accessing more granular levels of information and control.</p>
             <p>A dedicated rewards center, with multiple access paths, and opt-in push notifications</p>
           </div>
+        </div>
       </div>
 
       <div style="clear:both;"></div>
@@ -375,7 +330,7 @@
       <!--user flow section-->
       <div class="section">
         <!--title-->
-        <div class="">
+        <div class="subrow">
           <svg xmlns="http://www.w3.org/2000/svg" width="200" height="17" viewBox="0 0 200 17">
             <rect width="200" height="17" fill="#16585A" fill-rule="evenodd" />
           </svg>
@@ -391,6 +346,8 @@
         </div>
       </div>
 
+      <div style="clear:both;"></div>
+
       <!--development and testing section-->
       <div class="section">
         <!--title-->
@@ -400,25 +357,25 @@
           </svg>
           <h2>Development and Testing</h2>
           <p>With app structure now outlined, sketches began.</p>
-            <p>Sketches became wireframes.</p>
-            <p>And wireframes became the prototype for user testing.</p>
-            <p>This prototype was created with InVision, and you can see the living version <a class="inlinelink" href="https://invis.io/WXZTMF0SJ6M">here</a></p>
+          <p>Sketches became wireframes.</p>
+          <p>And wireframes became the prototype for user testing.</p>
+          <p>This prototype was created with InVision, and you can see the living version <a class="inlinelink" href="https://invis.io/WXZTMF0SJ6M">here</a></p>
           </p>
         </div>
         <!--row-->
         <div class="row">
           <!--column 1-->
-          <div class="column">
+          <div class="col-md-6 col-lg-2">
             <picture id="changesprototype">
               <source srcset="img/changes/prototype_mockup@0.5x.png" media="(max-width:767px)">
               <img src="img/changes/prototype_mockup.png" alt="prototype of an onboarding screen">
             </picture>
           </div>
           <!--column 2-->
-          <div class="column" id="changesuxtest">
-              <h3 class="centered">User Testing Results</h3>
+          <div class="col-md-6 col-lg-4">
+            <h3 class="centered">User Testing Results</h3>
             <!--sub-column 1-->
-            <div class="uxtest1">
+            <div class="col-lg-6">
               <div class="uxresults">
                 <h4 class="centered">Positive Responses</h4>
                 <ul>
@@ -428,15 +385,15 @@
                   <li>Aprreciate multiple pathways to Rewards Center</li>
                 </ul>
               </div>
-                <blockquote cite="">
-                  "That was simple!"
-                </blockquote>
+              <blockquote cite="">
+                "That was simple!"
+              </blockquote>
             </div>
             <!--sub-column 2-->
-            <div class="uxtest2">
-                <blockquote cite="">
-                  "I think it's great to have the quick, at-a-glance!"
-                </blockquote>
+            <div class="col-lg-6">
+              <blockquote cite="">
+                "I think it's great to have the quick, at-a-glance!"
+              </blockquote>
               <div class="uxresults">
                 <h4 class="centered">Pain Points</h4>
                 <ul>
@@ -470,10 +427,12 @@
         <div class="row">
           <h3>New User Onboarding</h3>
           <p>6 simple steps to create an account <br>and set your first savings goal.</p>
-          <picture>
-            <source srcset="img/changes/onboarding_mockup@0.5x.png" media="(max-width:767px)">
-            <img src="img/changes/onboarding_mockup.png" alt="series of onboarding screens in sequence">
-          </picture>
+          <div class="row">
+            <picture>
+              <source srcset="img/changes/onboarding_mockup@0.5x.png" media="(max-width:767px)">
+              <img src="img/changes/onboarding_mockup.png" alt="series of onboarding screens in sequence">
+            </picture>
+          </div>
         </div>
       </div>
 
@@ -481,20 +440,24 @@
       <div class="section">
         <h3>Granular Control</h3>
         <p>Nested information lets you decide how much detail to see on screen.</p>
-        <picture>
-          <source srcset="img/changes/granular_mockup@0.5x.png" media="(max-width:767px)">
-          <img src="img/changes/granular_mockup.png" alt="3 screens showing expenses in front of a yellow arrow">
-        </picture>
+        <div class="row">
+          <picture>
+            <source srcset="img/changes/granular_mockup@0.5x.png" media="(max-width:767px)">
+            <img src="img/changes/granular_mockup.png" alt="3 screens showing expenses in front of a yellow arrow">
+          </picture>
+        </div>
       </div>
 
       <!--dashboard flow section-->
       <div class="section">
         <h3>See the Big Picture</h3>
-        <p>Your dashboard can take you everywhere you need to go</p>
-        <picture>
-          <source src="img/changes/dashboard_flow@0.5x.png" media="(max-width:767px)">
-          <img src="img/changes/dashboard_flow.png" alt="series of screens depicting states of monetary accounts">
-        </picture>
+        <p>Your dashboard can take you everywhere you need to go.</p>
+        <div class="row">
+          <picture>
+            <source src="img/changes/dashboard_flow@0.5x.png" media="(max-width:767px)">
+            <img src="img/changes/dashboard_flow.png" alt="series of screens depicting states of monetary accounts">
+          </picture>
+        </div>
       </div>
 
       <!--multidevice section-->
@@ -507,15 +470,11 @@
         </picture>
       </div>
 
+      <div style="clear:both;"></div>
+
       <!--conclusion-->
       <div class="section">
-        <div class="background">
-          <picture>
-            <source srcset="img/changes/fallin_coins_invert@0.5x.png" media="(max-width:767px)">
-            <img src="img/changes/fallin_coins_invert.png" alt="">
-          </picture>
-        </div>
-        <div class="">
+        <div class="col-md-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="200" height="17" viewBox="0 0 200 17">
             <rect width="200" height="17" fill="#16585A" fill-rule="evenodd" />
           </svg>
@@ -537,9 +496,16 @@
             <br>There will be changes to come.
           </p>
         </div>
+        <div class="col-md-6">
+          <picture id="fallin-coins-invert">
+            <source srcset="img/changes/fallin_coins_invert@0.5x.png" media="(max-width:767px)">
+            <img src="img/changes/fallin_coins_invert.png" alt="">
+          </picture>
+        </div>
       </div>
-    </div>
 
+      <div class="section"> </div>
+    </div>
   </main>
 
   <footer id="contact" class="banner">

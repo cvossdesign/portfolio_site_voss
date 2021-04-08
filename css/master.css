@@ -17,6 +17,16 @@ Dark Copper: #915F1C
   src: url("../fonts/NewYork.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: "Charter Roman";
+  src: url("../fonts/Charter-Roman.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Charter Bold";
+  src: url("../fonts/Charter-Bold.ttf") format('truetype');
+}
+
 /* general styling */
 
 * {
@@ -80,12 +90,11 @@ blockquote {
   font-style: italic;
   text-align: center;
   border: 1px solid #CB9500;
-  margin: 40px auto;
-  padding: 0 24px;
+  margin: auto;
+  padding: 50px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
 }
 
 .labels {
@@ -112,7 +121,7 @@ blockquote {
 /* imagery */
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .simock {
@@ -321,9 +330,8 @@ td {
   text-align: center;
 }
 
-.uxresults {
+.uxresults1, .uxresults4 {
   background-color: #DBDBDB;
-  margin: 40px auto;
   padding: 24px 32px 24px 24px;
 }
 
@@ -341,7 +349,8 @@ td {
 }
 
 #changesprototype {
-  max-width: 400px;
+  display: flex;
+  justify-content: center;
 }
 
 /* 80 meals styles */
@@ -474,6 +483,10 @@ td {
     margin-bottom: 20px;
   }
 
+.uxresults1, .uxresults2, .uxresults3, .uxresults4{
+  margin: 20px auto;
+}
+
 }
 
 @media only screen and (min-width: 640px) {
@@ -535,6 +548,28 @@ td {
     width: 20%;
   }
 
+  .grid4 {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 4%;
+}
+
+.uxresults1 {
+  grid-area: 1 / 1 / span 2 / 1 ;
+}
+
+.uxresults2 {
+  grid-area: 1 / 2 / 1 / 2 ;
+}
+
+.uxresults3 {
+  grid-area: 3 / 1 / 3 / 1 ;
+}
+
+.uxresults4 {
+  grid-area: 2 / 2 / span 2 / 2 ;
+}
+
   .logo {
     padding-top: 24px;
   }
@@ -577,7 +612,6 @@ td {
 
 @media only screen and (min-width: 1440px) {
   .container {
-    padding: 0 140px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;

@@ -113,10 +113,6 @@ blockquote {
   text-align: center;
 }
 
-.sih2 {
-  border-bottom: 4px solid #C8C8C8;
-}
-
 .left {
   text-align: left;
 }
@@ -130,17 +126,13 @@ blockquote {
 }
 
 /* imagery */
+
 img {
   max-width: 100%;
 }
 
-.simock {
-  max-height: 547px;
-  display: inline-block;
-  padding: 12px;
-}
-
 /* links and buttons */
+
 a {
   color: #000000;
   text-decoration: none;
@@ -181,6 +173,7 @@ a:hover, a:focus, a:active {
 }
 
 /* header and footer */
+
 header {
   background-color: #D9D3CF;
   padding: 12px 0 0;
@@ -215,6 +208,7 @@ nav>ul>li {
 }
 
 /* general layout */
+
 main {
   padding-top: 102px;
 }
@@ -268,7 +262,7 @@ td {
   text-align: left;
 }
 
-#iconography {
+.iconography, #iconography {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -407,6 +401,34 @@ td {
   padding-left: 20px;
 }
 
+/* space imagined styles */
+
+.sih2 {
+  display: inline-block;
+  border-bottom: 4px solid #C8C8C8;
+}
+
+.simock {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.siwireframe {
+  padding: 6px;
+  float: left;
+  width: 48%;
+  margin: 16px 1% 0;
+  background-color: #ECE3CB;
+}
+
+.siwiretext {
+  padding: 6px;
+  float: left;
+  width: 48%;
+  margin: 0 1%;
+}
+
 /* quicknotes styles */
 
 .colorblock1, .colorblock2, .colorblock3, .colorblock4, .colorblock5 {
@@ -480,7 +502,7 @@ td {
   margin-right: 2%;
 }
 
-.row::after, .subrow::after, .section::after {
+.row::after, .subrow::after, .section::after, .subsection::after {
   content: "";
   clear: both;
   display: table;
@@ -595,6 +617,11 @@ td {
     grid-area: 2 / 2 / span 2 / 2;
   }
 
+  .sifinal2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
   .logo {
     padding-top: 24px;
   }
@@ -631,6 +658,11 @@ td {
 
   .hide-2 {
     margin-left: 33%;
+  }
+
+  .sifinal3 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
   }
 
   #about h1, #about h2 {

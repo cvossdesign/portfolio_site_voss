@@ -420,6 +420,8 @@ td {
   width: 48%;
   margin: 16px 1% 0;
   background-color: #ECE3CB;
+  display: flex;
+  justify-content: center;
 }
 
 .siwiretext {
@@ -660,10 +662,27 @@ td {
     margin-left: 33%;
   }
 
+  #sihero {text-align: left;}
+
   .sifinal3 {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
   }
+
+  .sistructure {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 2%
+  }
+
+  .sis1 {grid-area: 1/1}
+  .sis2 {grid-area: 2/1}
+  .sis3 {grid-area: 3/1}
+  .sis4 {grid-area: 4/1}
+  .sis5 {grid-area: 1/2}
+  .sis6 {grid-area: 2/2}
+  .sis7 {grid-area: 3/2}
+  .sis8 {grid-area: 4/2}
 
   #about h1, #about h2 {
     text-align: left;

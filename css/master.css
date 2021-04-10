@@ -163,7 +163,6 @@ a:visited {
 
 a:hover, a:focus, a:active {
   color: #000000;
-  text-decoration: underline;
 }
 
 .button, .button:visited {
@@ -193,6 +192,12 @@ a:hover, a:focus, a:active {
 .inlinelink {
   color: #B87333;
   text-decoration: none;
+}
+
+.hometown-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* header and footer */
@@ -502,6 +507,35 @@ td {
   padding-top: 100%;
   border-radius: 20%;
   border: 1px solid black;
+}
+
+/* css animation */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px, 50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* all purpose columns and floats */

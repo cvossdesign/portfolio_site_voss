@@ -40,6 +40,26 @@ Dark Copper: #915F1C
   src: url("../fonts/SukhumvitSet-Bold.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: "Optima";
+  src: url("../fonts/Optima.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "OptimaBold";
+  src: url("../fonts/Optima-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Zapfino";
+  src: url("../fonts/Zapfino.ttf") format('truetype');
+}
+
 /* general styling */
 * {
   box-sizing: border-box;
@@ -126,13 +146,11 @@ blockquote {
 }
 
 /* imagery */
-
 img {
   max-width: 100%;
 }
 
 /* links and buttons */
-
 a {
   color: #000000;
   text-decoration: none;
@@ -156,7 +174,8 @@ a:hover, a:focus, a:active {
   padding: 10px 26px;
   border-radius: 4px;
   border: 2px solid #B87333;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover, .button:focus, .button:active {
@@ -167,13 +186,16 @@ a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
+.button:hover {
+  opacity: 0.8;
+}
+
 .inlinelink {
   color: #B87333;
   text-decoration: none;
 }
 
 /* header and footer */
-
 header {
   background-color: #D9D3CF;
   padding: 12px 0 0;
@@ -208,13 +230,16 @@ nav>ul>li {
 }
 
 /* general layout */
-
 main {
   padding-top: 102px;
 }
 
 .container {
   padding: 0 12px;
+}
+
+.inset {
+  background-color: white
 }
 
 .section {
@@ -241,13 +266,22 @@ main {
   margin: 6px;
 }
 
+.iconinner {
+  display: flex;
+  justify-content: center;
+}
+
 .social {
   display: inline-block;
   padding: 20px 12px
 }
 
-/* table styles */
+.justify {
+  display: flex;
+  justify-content: center;
+}
 
+/* table styles */
 tr:nth-child(even) {
   background-color: #F6F7E9;
 }
@@ -272,7 +306,7 @@ td {
   top: 20px;
 }
 
-#papermock{
+#papermock {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -280,7 +314,6 @@ td {
 }
 
 /* about page styles */
-
 .circle {
   border-radius: 50%;
 }
@@ -305,7 +338,6 @@ td {
 }
 
 /* changes styles */
-
 .money {
   font-style: italic;
   text-align: center;
@@ -338,7 +370,7 @@ td {
   text-align: center;
 }
 
-.uxresults1, .uxresults4 {
+#changes+.uxresults1, #changes+.uxresults4 {
   background-color: #DBDBDB;
   padding: 24px 32px 24px 24px;
 }
@@ -362,7 +394,6 @@ td {
 }
 
 /* 80 meals styles */
-
 .mealsblock {
   background-color: rgba(230, 183, 0, 0.4);
   border-radius: 40px;
@@ -389,7 +420,7 @@ td {
   align-items: center;
 }
 
-#abtest + .col-sm-2 {
+#abtest+.col-sm-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -402,7 +433,6 @@ td {
 }
 
 /* space imagined styles */
-
 .sih2 {
   display: inline-block;
   border-bottom: 4px solid #C8C8C8;
@@ -432,7 +462,6 @@ td {
 }
 
 /* quicknotes styles */
-
 .colorblock1, .colorblock2, .colorblock3, .colorblock4, .colorblock5 {
   display: inline-block;
   float: left;
@@ -463,12 +492,19 @@ td {
   padding-top: 20px;
 }
 
-/* all purpose columns and floats */
-
-.col-bujo {
-  width: 165px;
+/* bujo styles */
+.bujostructure {
+  background-image: url(img/bulletjournal/user_flow_diagram.png);
 }
 
+.color-blob {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 20%;
+  border: 1px solid black;
+}
+
+/* all purpose columns and floats */
 .col-2, .col-3, .col-5, .col-6 {
   float: left;
   padding-right: 6px;
@@ -511,10 +547,14 @@ td {
 }
 
 /* media queries */
-
 @media (max-width: 639px) {
   #fallin-coins-invert {
     display: none;
+  }
+
+  .col-sm-1 {
+    width: 100%;
+    margin-bottom: 40px;
   }
 
   .col-sm-2 {
@@ -597,6 +637,10 @@ td {
     width: 20%;
   }
 
+  .col-right {
+    float: right
+  }
+
   .grid4 {
     display: grid;
     grid-template-columns: 48% 48%;
@@ -662,7 +706,9 @@ td {
     margin-left: 33%;
   }
 
-  #sihero {text-align: left;}
+  #sihero {
+    text-align: left;
+  }
 
   .sifinal3 {
     display: grid;
@@ -675,14 +721,41 @@ td {
     grid-column-gap: 2%
   }
 
-  .sis1 {grid-area: 1/1}
-  .sis2 {grid-area: 2/1}
-  .sis3 {grid-area: 3/1}
-  .sis4 {grid-area: 4/1}
-  .sis5 {grid-area: 1/2}
-  .sis6 {grid-area: 2/2}
-  .sis7 {grid-area: 3/2}
-  .sis8 {grid-area: 4/2}
+  .sis1 {
+    grid-area: 1/1
+  }
+
+  .sis2 {
+    grid-area: 2/1
+  }
+
+  .sis3 {
+    grid-area: 3/1
+  }
+
+  .sis4 {
+    grid-area: 4/1
+  }
+
+  .sis5 {
+    grid-area: 1/2
+  }
+
+  .sis6 {
+    grid-area: 2/2
+  }
+
+  .sis7 {
+    grid-area: 3/2
+  }
+
+  .sis8 {
+    grid-area: 4/2
+  }
+
+  .offtype {
+    margin-top: 8px;
+  }
 
   #about h1, #about h2 {
     text-align: left;
@@ -693,6 +766,7 @@ td {
     position: relative;
     top: 16px;
   }
+
 }
 
 @media only screen and (min-width: 1440px) {
